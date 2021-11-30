@@ -18,6 +18,11 @@ export const Input = styled.input`
         margin-left: 33px; 
         height:33px;
         font-size:18px;
+        Width: 78px;
+        @media (max-width:880px) {
+          font-size:12px;
+
+         }
  
 
        
@@ -31,9 +36,22 @@ export const Social = styled.img`
    object-fit: contain;
   `;
 
+  export const Tezos = styled.img`
+  height: 33px;
+  width: 33px;
+  position: relative;
+  padding-left:33px;
+   object-fit: contain;
+   @media (max-width:880px) {
+    height:18px;
+    width:18px;
+   }
+   
+  `;
   export const Div = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
  
@@ -94,6 +112,7 @@ export const Button = styled.button`
   text-align: center;
   text-decoration: none;
   margin-left:18px;
+  
  
   ${props => props.hidden && "hidden"} :focus {
     border: none;

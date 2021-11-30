@@ -83,7 +83,7 @@ During the Cuban Revolution, Fabian's Abuela fought for her country. She showed 
         </Body>
         <Footer>
         <a href="https://twitter.com/esquinadeabuela" target="blank" rel="noopener noreferrer"><Social src={twitter} className="twitter" alt="Twitter"/></a>
-        <a href="https://twitter.com/esquinadeabuela" target="blank" rel="noopener noreferrer"><Social src={insta} className="instagram" alt="Instagram"/></a>
+        <a href="https://instagram.com/esquinadeabuela" target="blank" rel="noopener noreferrer"><Social src={insta} className="instagram" alt="Instagram"/></a>
         </Footer>
  </>
   );
