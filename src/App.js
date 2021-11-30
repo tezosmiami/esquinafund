@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Body, Button, Header, Input, Image, Social, Text, P, Div, Footer} from "./components";
+import { Body, Button, Header, Input, Image, Social, Text, Tezos, P, Div, Footer} from "./components";
 
 import ReactPlayer from "react-player"
 import { useUserContext } from "./UserContext"
@@ -45,7 +45,7 @@ import tezos from './tezoslogo.svg'
   
       <Image src={logo}/>
       <Div>
-     <Social hidden={!app.activeAccount} src={tezos}/>
+     <Tezos hidden={!app.activeAccount} src={tezos}/>
         <Input
             hidden={!app.activeAccount}
             name="amount"

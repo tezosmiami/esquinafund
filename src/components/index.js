@@ -9,7 +9,7 @@ export const Header = styled.header`
  margin: 1%;
 
  @media (max-width:880px) {
-  flex-wrap: wrap;
+
  }
 
 `;
@@ -18,10 +18,10 @@ export const Input = styled.input`
         margin-left: 33px; 
         height:33px;
         font-size:18px;
-        Width: 78px;
+       
         @media (max-width:880px) {
           font-size:12px;
-
+          Width: 78px;
          }
  
 
@@ -40,7 +40,6 @@ export const Social = styled.img`
   height: 33px;
   width: 33px;
   position: relative;
-  padding-left:33px;
    object-fit: contain;
    @media (max-width:880px) {
     height:18px;
