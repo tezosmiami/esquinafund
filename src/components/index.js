@@ -43,7 +43,7 @@ export const Body = styled.div`
   margin-top: 18px;
   font-size: calc(10px + 2vmin);
   justify-content: top;
-
+ width:100%;
 `;
 
 export const Image = styled.img`
