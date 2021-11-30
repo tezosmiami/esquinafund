@@ -38,10 +38,10 @@ export const Social = styled.img`
  
   `
 export const Body = styled.div`
-position:fixed:
+display: flex;
   align-items: center;
   color: black;
-  display: flex;
+ 
   flex-direction: column;
   margin-top: 18px;
   font-size: calc(10px + 2vmin);
@@ -67,7 +67,8 @@ export const P = styled.p`
   text-align:center;
 `
 export const Text = styled.div`
-  margin-left: 9%;
+  
+margin-left: 9%;
   margin-right: 9%;
   font-size:18px;
   font: Arapey;
