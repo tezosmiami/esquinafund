@@ -22,6 +22,7 @@ export const Input = styled.input`
         @media (max-width:880px) {
           font-size:12px;
           Width: 78px;
+          margin-left: 18px; 
          }
  
 
@@ -42,8 +43,8 @@ export const Social = styled.img`
   position: relative;
    object-fit: contain;
    @media (max-width:880px) {
-    height:18px;
-    width:18px;
+    height:23px;
+    width:23px;
    }
    
   `;
