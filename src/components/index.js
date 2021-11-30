@@ -87,8 +87,8 @@ export const P = styled.p`
 `
 export const Text = styled.div`
   
-margin-left: 9%;
-  margin-right: 9%;
+margin-left: 11%;
+  margin-right: 11%;
   font-size:18px;
   font: Arapey;
   margin-top: 5%;
