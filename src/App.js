@@ -13,9 +13,9 @@ import tezos from './tezoslogo.svg'
     const  app = useUserContext();
 
 
-  const send = () => { 
-    app.tezos.wallet
-  .transfer({ to: 'tz1PBM5SNXtr1HX5XSEt1aQGmP5CeHeW6FE', amount: Number(amount).toFixed(2)})
+  const send = async () => { 
+    await app.tezos.wallet
+  .transfer({ to: 'tz1PBM5SNXtr1HX5XSEt1aQGmP5CeHeW6FEJ', amount: Number(amount).toFixed(2)})
   .send()
   .then((op) => {
     console.log(`Hash: ${op.opHash}`);
