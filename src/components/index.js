@@ -7,7 +7,7 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
  margin: 1%;
-  width:97vw;
+
   
 
 
@@ -43,7 +43,7 @@ display: flex;
   color: black;
  
   flex-direction: column;
-  margin-top: 18px;
+  margin-top: 33px;
   font-size: calc(10px + 2vmin);
   justify-content: center;
  width:100vw;
