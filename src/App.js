@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, {useState} from "react";
 import { Body, Button, Header, Input, Image, Social, Text, P, Div, Footer} from "./components";
 
 import ReactPlayer from "react-player"
@@ -44,14 +44,7 @@ import tezos from './tezoslogo.svg'
         
   
       <Image src={logo}/>
-      <a hidden={!app.activeAccount}> You: &nbsp;{app.address}</a>     
-      <Button onClick={() => !app.activeAccount ? app.logIn() : app.logOut()}>
-      
-          {!app.activeAccount ? "Sync to Donate" :"Sign Out"}</Button>
-          
-      </Header>
-      <Body>
-      <Div >
+      <Div>
      <Social hidden={!app.activeAccount} src={tezos}/>
         <Input
             hidden={!app.activeAccount}
@@ -67,6 +60,13 @@ import tezos from './tezoslogo.svg'
           />
         <Button onClick={amount>0 && send} hidden={!app.activeAccount}>Donate</Button>
           </Div>
+      <Button onClick={() => !app.activeAccount ? app.logIn() : app.logOut()}>
+      
+          {!app.activeAccount ? "Sync to Donate" :"Sign Out"}</Button>
+          
+      </Header>
+      <Body>
+     
       <ReactPlayer url='https://www.youtube.com/watch?v=xn4hdnFLojg'/>
      
             <Text>

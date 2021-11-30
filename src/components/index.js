@@ -12,7 +12,7 @@ export const Header = styled.header`
 `;
 
 export const Input = styled.input`
-        margin: 33px; 
+        margin-left: 33px; 
         height:33px;
         font-size:18px;
        
@@ -81,6 +81,7 @@ export const Button = styled.button`
   font-size: 16px;
   text-align: center;
   text-decoration: none;
+  margin-left:18px;
  
   ${props => props.hidden && "hidden"} :focus {
     border: none;

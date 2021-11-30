@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback} from "react";
+import React, { useEffect, useState} from "react";
 import { TezosToolkit } from "@taquito/taquito";
 import { BeaconWallet } from "@taquito/beacon-wallet";
 
@@ -9,10 +9,6 @@ const options = {
  };
   
 const wallet = new BeaconWallet(options);
-const getActiveAccount = async() => {
-  if (wallet.client) return await wallet.client.getActiveAccount();
-
-};
 
 export const useUserContext = () => {
 
