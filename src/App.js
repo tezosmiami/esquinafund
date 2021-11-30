@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Body, Button, Header, Input, Image, Social, Text, P, Div, Footer} from "./components";
+import { Body, Button, Header, Input, Image, Player, Social, Text, P, Div, Footer} from "./components";
 
 import ReactPlayer from "react-player"
 import { useUserContext } from "./UserContext"
@@ -51,9 +51,9 @@ import tezos from './tezoslogo.svg'
             name="amount"
             type="number"
             step=".01"
-          
+            min=".01"
             required="required"
-            placeholder="Amount to Donate?"
+            placeholder="Enter Amount"
             onChange={event => {
               setAmount(event.target.value);
             }}
@@ -67,7 +67,7 @@ import tezos from './tezoslogo.svg'
       </Header>
       <Body>
      
-      <ReactPlayer url='https://www.youtube.com/watch?v=xn4hdnFLojg'/>
+      <ReactPlayer width="80%" url='https://www.youtube.com/watch?v=xn4hdnFLojg'/>
      
             <Text>
             Esquina de Abuela’s is a community space in the Allapattah neighborhood of Miami, Florida where local and international artists come together to create, perform, and exhibit their work.
@@ -91,3 +91,4 @@ During the Cuban Revolution, Fabian's Abuela fought for her country. She showed 
 }
 
 export default App;
+

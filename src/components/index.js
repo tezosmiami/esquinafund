@@ -15,6 +15,8 @@ export const Input = styled.input`
         margin-left: 33px; 
         height:33px;
         font-size:18px;
+ 
+
        
 `;
 
@@ -31,7 +33,7 @@ export const Social = styled.img`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom:33px;
+ 
   `
 export const Body = styled.div`
   align-items: center;
@@ -41,7 +43,6 @@ export const Body = styled.div`
   margin-top: 18px;
   font-size: calc(10px + 2vmin);
   justify-content: top;
-  min-height: calc(100vh - 70px);
 
 `;
 
@@ -49,6 +50,11 @@ export const Image = styled.img`
   height:108px;
   width: 108px; 
   pointer-events: none;
+  @media (max-width:880px) {
+   height:66px;
+   width:66px;
+    font-weight:bold;
+  }
 `;
 
 export const P = styled.p`
@@ -65,6 +71,7 @@ export const Text = styled.div`
   margin-top: 5%;
   pointer-events: none;
 `;
+
 
 export const Footer = styled.footer`
 display: flex;
