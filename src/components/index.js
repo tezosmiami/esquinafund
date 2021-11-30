@@ -6,7 +6,9 @@ export const Header = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 3%;
+ margin: 1%;
+  width:97vw;
+  
 
 
 `;
@@ -43,7 +45,7 @@ export const Body = styled.div`
   margin-top: 18px;
   font-size: calc(10px + 2vmin);
   justify-content: center;
- width:100%;
+ width:100vw;
 `;
 
 export const Image = styled.img`
