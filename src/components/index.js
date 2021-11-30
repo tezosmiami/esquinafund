@@ -66,8 +66,8 @@ export const P = styled.p`
   text-align:center;
 `
 export const Text = styled.div`
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 9%;
+  margin-right: 9%;
   font-size:18px;
   font: Arapey;
   margin-top: 5%;
