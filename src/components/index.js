@@ -38,6 +38,7 @@ export const Social = styled.img`
  
   `
 export const Body = styled.div`
+position:fixed:
   align-items: center;
   color: black;
   display: flex;
