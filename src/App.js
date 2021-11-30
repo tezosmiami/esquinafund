@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Body, Button, Header, Input, Image, Player, Social, Text, P, Div, Footer} from "./components";
+import { Body, Button, Header, Input, Image, Social, Text, P, Div, Footer} from "./components";
 
 import ReactPlayer from "react-player"
 import { useUserContext } from "./UserContext"

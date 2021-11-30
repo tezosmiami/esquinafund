@@ -42,7 +42,7 @@ export const Body = styled.div`
   flex-direction: column;
   margin-top: 18px;
   font-size: calc(10px + 2vmin);
-  justify-content: top;
+  justify-content: center;
  width:100%;
 `;
 
