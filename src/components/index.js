@@ -7,9 +7,10 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
  margin: 1%;
-
-  
-
+ width: 100vw;
+ @media (max-width:880px) {
+  flex-wrap: wrap;
+ }
 
 `;
 
