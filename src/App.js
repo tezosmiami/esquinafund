@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Body, Button, Header, Input, Image, Social, Text, Tezos, P, Div, Footer} from "./components";
 
 import ReactPlayer from "react-player"
@@ -8,14 +8,25 @@ import twitter from './twitter.png';
 import insta from './insta.png';
 import tezos from './tezoslogo.svg'
 
- export const App = () => {
-  const [amount,setAmount] = useState("")
-    const  app = useUserContext();
-
+const address = "tz1PBM5SNXtr1HX5XSEt1aQGmP5CeHeW6FEJ";
+ 
+export const App = () => {
+  const [amount,setAmount] = useState("");
+const [funds,setFunds] = useState("");
+const  app = useUserContext();
+    useEffect(() => {
+    
+      const funded = async () => { await app.tezos.rpc
+        .getBalance(address)
+        .then(balance =>  {console.log(balance.toNumber()/10**6); setFunds(balance.toNumber()/10**6)})
+        .catch(e => console.log('Address not found'));
+    }
+funded();
+    }, [])   
 
   const send = async () => { 
     await app.tezos.wallet
-  .transfer({ to: 'tz1PBM5SNXtr1HX5XSEt1aQGmP5CeHeW6FEJ', amount: Number(amount).toFixed(2)})
+  .transfer({ to: address , amount: Number(amount).toFixed(2)})
   .send()
   .then((op) => {
     console.log(`Hash: ${op.opHash}`);
@@ -58,17 +69,19 @@ import tezos from './tezoslogo.svg'
               setAmount(event.target.value);
             }}
           />
-        <Button onClick={amount>0 && send} hidden={!app.activeAccount}>Donate</Button>
+       { amount > 0 && <Button onClick={send} hidden={!app.activeAccount}>Donate</Button>}
           </Div>
       <Button onClick={() => !app.activeAccount ? app.logIn() : app.logOut()}>
-      
+      {}
           {!app.activeAccount ? "Sync to Donate" :"Sign Out"}</Button>
           
       </Header>
-      <Body>
-     
+         <Body>
+         <Div>
+      <p>Total Funded: {funds} <Tezos src={tezos}></Tezos></p> <p /></Div>
+      
       <ReactPlayer width="80%" url='https://www.youtube.com/watch?v=xn4hdnFLojg'/>
-     
+            
             <Text>
             Esquina de Abuela’s is a community space in the Allapattah neighborhood of Miami, Florida where local and international artists come together to create, perform, and exhibit their work.
 We want to see artists bloom to their full potential. At EDA, we're not just a hostel, we're not just a gallery, we're not just a venue; we are a family. Everyone who walks through our doors is treated with love and respect. We want every person who comes to EDA to become the best version of themselves by growing together.
